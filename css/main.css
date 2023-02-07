@@ -384,6 +384,7 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .site-main {
@@ -411,4 +412,377 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.wrapper {
+  background-image: url("../images/Frame 1304.svg");
+  background-repeat: no-repeat;
+}
+
+.site-header {
+  position: relative;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  filter: drop-shadow(0px 1px 10px rgba(18, 87, 91, 0.25));
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 49px;
+  height: 38px;
+}
+
+.sitenav {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #2A8086;
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
+.sitenav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.sitenav__item {
+  margin-bottom: 32px;
+}
+
+.sitenav__link {
+  font-family: "Roboto Mono";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #f3f7f8;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.sitenav__modal-mobile {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.sitenav__link:hover {
+  border-bottom: 2px solid #c5e1e6;
+  transition: 0.5s ease;
+}
+
+.site-header__btn {
+  background-image: url("../images/Burger-menu.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+
+.active {
+  display: block;
+}
+
+.active .site-header__btn {
+  background-image: url("../images/Logo-large.svg");
+}
+
+.site-header__login {
+  background-image: url("../images/Frame 1350.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  width: 56px;
+  height: 56px;
+  display: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6509803922);
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 100000;
+  top: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 454px;
+  background-color: white;
+  padding: 25px 10px;
+}
+
+.contact {
+  display: none;
+  position: absolute;
+  z-index: 100000;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 454px;
+  background-color: white;
+  padding: 25px 10px;
+}
+
+.modal__logo {
+  position: relative;
+  background-color: #2a8086;
+  margin-bottom: 32px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.modal__links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  border-bottom: 2px solid #C5E1E6;
+  padding-bottom: 25px;
+}
+
+.modal__links-btn--margin {
+  margin-right: 57px;
+}
+
+.modal__links-btn {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #0D444D;
+  border: none;
+  background-color: transparent;
+}
+
+.none {
+  display: none;
+}
+
+.modal__messengers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.reset {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  background-image: url("../images/Vector.svg");
+  background-repeat: no-repeat;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.modal__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 146px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2d2d2d;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 15px 0;
+}
+
+.modal__link::before {
+  background-image: url("../images/Google Logo.svg");
+  background-repeat: no-repeat;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.modal__link:nth-child(2)::before {
+  background-image: url("../images/Facebook Logo.svg");
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #0d444d;
+  margin-bottom: 6px;
+}
+
+.modal__input {
+  background: #fff;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal__checkbox {
+  width: 24px;
+  height: 24px;
+  border: 1.5px solid #19707D;
+  border-radius: 4px;
+}
+
+.modal__chekc-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal__check {
+  width: 262px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2d2d2d;
+}
+
+.modal__btn {
+  font-family: "Roboto Mono";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C5E1E6;
+  border: none;
+  background-color: #2A8088;
+  box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+  border-radius: 100px;
+  padding: 8px 0;
+}
+
+.modal__text {
+  resize: none;
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 32px;
+}
+
+.modal-contact__reset {
+  top: 20px;
+  right: 20px;
+}
+
+.contact-on {
+  display: block;
+}
+
+.modal-on {
+  display: block;
+}
+
+@media only screen and (min-width: 500px) {
+  .modal {
+    top: 10px;
+    border-radius: 20px;
+  }
+  .contact {
+    border-radius: 20px;
+    top: 50px;
+  }
+  .modal__link {
+    width: 189px;
+  }
+  .modal__check {
+    width: 100%;
+    margin-left: 22px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .site-header {
+    padding: 20px 0;
+  }
+  .logo {
+    width: 108px;
+    height: 84px;
+  }
+  .site-header__wrapper {
+    justify-content: flex-start;
+  }
+  .sitenav {
+    display: block;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    transform: none;
+    height: auto;
+  }
+  .sitenav__list {
+    flex-direction: row;
+    margin-left: 53px;
+  }
+  .sitenav__item {
+    margin: 0;
+    margin-left: 42px;
+  }
+  .sitenav__item:last-child {
+    display: none;
+  }
+  .sitenav__link {
+    font-weight: 500;
+    color: #c5e1e6;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .site-header__btn {
+    background-image: url("../images/Frame.svg");
+    width: 32px;
+    height: 32px;
+    margin-right: 31px;
+  }
+  .site-header__btn-wrappers {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .site-header__login {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Zoo</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="slick/slick.css">
@@ -14,14 +14,60 @@
 <body>
     
     <!-- Header start -->
-    <header class="site-header">
-       
-    </header>
-    <!-- Header finish -->
+    <div class="wrapper">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header__wrapper">
+                    <a href="./index.html">
+                        <img class="logo" src="./images/Logo-large.svg" alt="site logo">
+                    </a>
+                    <nav class="sitenav">
+                        <ul class="sitenav__list">
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">
+                                    about
+                                </a>
+                            </li>
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">
+                                    MAP
+                                </a>
+                            </li>
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">
+                                    zoos
+                                </a>
+                            </li>
+                            <li class="sitenav__item">
+                                <button class="sitenav__link sitenav__modal-mobile" type="button">
+                                    contact us
+                                </button>
+                            </li>  
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">
+                                    design
+                                </a>
+                            </li>  
+                            <li class="sitenav__item">
+                                <button class="sitenav__link sitenav__modal-mobile site-header__click" type="button">
+                                    my contact
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="site-header__btn-wrappers" >
+                        <button class="site-header__btn" type="button"></button>
+                        <button class="site-header__login" type="button"></button>
+                    </div>
+                </div>   
+            </div>
+        </header>
+        <!-- Header finish -->
+    </div>
     
     <!-- Main start -->
     <main class="site-main">
-       
+        
         
     </main>
     <!-- Main finish  -->
@@ -30,7 +76,68 @@
     <footer class="site-footer">
         
     </footer>
+    
+    
+    
     <!-- Footer finish -->
+    
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__logo">
+                <a href="./index.html">
+                    <img class="logo" src="./images/Logo-large.svg" alt="">
+                </a>
+                <button class="reset" type="button"></button>
+            </div>
+            <div class="modal__links-wrapper">
+                <button class="modal__links-btn modal__links-btn--margin">
+                    Create acccount
+                </button>
+                <button class="modal__links-btn modal__links-btn--active" type="button">
+                    Log in
+                </button>
+            </div>
+            <div class="modal__messengers" >
+                <a class="modal__link " href="#">Google</a>
+                <a class="modal__link modal__link-facebok" href="#">Facebook</a>
+            </div>
+            <form class="modal__form" action="" method="post" autocomplete="off">
+                <label class="modal__label" for="name">Name</label>
+                <input class="modal__input" type="text" name="user_name" id="name">
+                <label class="modal__label" for="email">Email</label>
+                <input class="modal__input" type="text" name="user_name" id="email">
+                <label class="modal__label" for="password">Password</label>
+                <input class="modal__input" type="text" name="user_name" id="password">
+                <div class="modal__chekc-wrapper " >
+                    <input class="modal__checkbox" type="checkbox" id="checked">
+                    <label class="modal__check" for="checked">Agree with the User Agreement and Privacy Policy </label>
+                </div>
+                <button class="modal__btn" type="submit" >send</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="contact">
+        <div class="contact__wrapper" >
+            <h2 class="contact__title">
+                Contact us
+            </h2>
+            <form class="modal__form" action="" method="post" autocomplete="off">
+                <label class="modal__label" for="namecontact">Name</label>
+                <input class="modal__input" type="text" name="user_name" id="namecontact">
+                <label class="modal__label" for="emailcontact">Email</label>
+                <input class="modal__input" type="text" name="user_name" id="emailcontact">
+                <label class="modal__label" for="passwordcontact">Password</label>
+                <input class="modal__input" type="password" name="user_name" id="passwordcontact">
+                <label class="modal__label" for="message">Your Message</label>
+                <textarea class="modal__text" name="user__message" id="message" cols="30" rows="10"></textarea>
+                <button class="modal__btn" type="submit" >send</button>
+            </form>
+            <button class="reset modal-contact__reset" type="button"></button>
+        </div>
+    </div>
+    
+    
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
